@@ -13,7 +13,8 @@ self.addEventListener('install', (event) => {
             'images/a.jpg',
             'images/b.jpg',
             'images/c.jpg',
-            'images/d.jpg'
+            'images/d.jpg',
+            'images/fond_ecran.png'
          ]);
         })
         .then(() => {

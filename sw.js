@@ -7,8 +7,8 @@ self.addEventListener('install', (event) => {
         .then((cache) => {
           return cache.addAll([
             './',
-            'tweetboxsw.html',
-            'stylesheets/tweetboxsw.css',
+            'index.html',
+            'stylesheets/index.css',
             'manifest.json',
             'images/a.jpg',
             'images/b.jpg',

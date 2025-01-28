@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="stylesheets/tweetboxsw.css">
+</head>
+<body>
+  <h1>Oh, my lovely website</h1>
+  <ul>
+    <li><img src="images/a.jpg" alt=""></li>
+    <li><img src="images/b.jpg" alt=""></li>
+    <li><img src="images/c.jpg" alt=""></li>
+    <li><img src="images/d.jpg" alt=""></li>
+  </ul>
+  <script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>

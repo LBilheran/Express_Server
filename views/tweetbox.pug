@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= title
+  <div id="app">
+    <form action="" @submit.prevent="creeTweet">
+        <textarea v-model="text"></textarea>
+        <p :class="{ limite : limiteDepassee }">{{ nbRestants }}</p>
+        <button :disabled="limiteDepassee">Tweet</button>
+        <input id="photo" type="checkbox" v-model="photo">
+        <label for="photo">
+            <span v-if="!photo">Pas de photo</span>
+            <span v-else>Photo ajoutée</span>
+        </label>
+    </form>
+    <div id="tweets">
+        <tweet v-for="tweet in tweets" :text="tweet.text" :photo="tweet.photo"></tweet>
+    </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="javascripts/tweetbox.js"></script>
+
